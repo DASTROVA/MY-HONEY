@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <meta name="description" content="Forever Marjona — sen uchun yaratilgan alohida dunyo.">
+  <title>Forever Marjona ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <div class="loader" id="loader">
+    <div class="loader-heart">♥</div>
+    <p>FOREVER MARJONA</p>
+    <span>Loading something special...</span>
+  </div>
+  
+  <div class="hearts-background" id="heartsBackground"></div>
+  
+  <header class="navbar">
+    <a href="#home" class="logo">Forever <span>♥</span></a>
+    
+    <nav>
+      <a href="#home" data-i18n="navHome">Bosh sahifa</a>
+      <a href="#story" data-i18n="navStory">Hikoyamiz</a>
+      <a href="#letter" data-i18n="navLetter">Maktub</a>
+      <a href="#gallery" data-i18n="navGallery">Galereya</a>
+    </nav>
+    
+    <button id="languageBtn" class="language-btn">EN</button>
+  </header>
+  
+  <main>
+    
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow" data-i18n="heroSmall">
+          ✨ SEN UCHUN MAXSUS YARATILDI
+        </span>
+        
+        <h1>
+          Forever
+          <span>Marjona</span>
+        </h1>
+        
+        <p class="hero-description" data-i18n="heroText">
+          Bu kichik dunyo faqat sen uchun.
+          Har bir sahifasida alohida bir mehr yashiringan.
+        </p>
+        
+        <a href="#story" class="primary-btn" data-i18n="heroButton">
+          Sehrli dunyoga kirish →
+        </a>
+        
+        <div class="hero-decoration">♡</div>
+      </div>
+      
+      <div class="hero-image">
+        <div class="photo-frame">
+          <img src="images/photo1.jpg" alt="Marjona uchun maxsus surat" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="photo-placeholder">
+            <span>♡</span>
+            <p data-i18n="photoPlaceholder">Bu yerga surat joylashtiring</p>
+          </div>
+        </div>
+        <div class="floating-heart heart-one">♥</div>
+        <div class="floating-heart heart-two">♡</div>
+        <div class="floating-heart heart-three">♥</div>
+      </div>
+    </section>
+    
+    <!-- STORY -->
+    <section class="section story-section" id="story">
+      <div class="section-heading">
+        <span class="section-label">01 — OUR WORLD</span>
+        <h2 data-i18n="storyTitle">Senga atalgan kichik dunyo</h2>
+        <div class="heading-line"></div>
+      </div>
+      
+      <div class="story-card">
+        <div class="story-icon">🌷</div>
+        <h3 data-i18n="storyCardTitle">Marjona, bu sen uchun!</h3>
+        <p data-i18n="storyText">
+          Ba'zi insonlar hayotimizga kirib keladi va oddiy kunlarga
+          ham o'zgacha ma'no beradi. Ushbu sayt esa sen uchun
+          tayyorlangan kichik bir sovg'a.
+        </p>
+        <div class="story-signature">With love, Forever ♥</div>
+      </div>
+    </section>
+    
+    <!-- LOVE LETTER -->
+    <section class="section letter-section" id="letter">
+      <div class="section-heading">
+        <span class="section-label">02 — SECRET LETTER</span>
+        <h2 data-i18n="letterTitle">Senga bir maktub bor...</h2>
+        <div class="heading-line"></div>
+        <p data-i18n="letterSubtitle">Konvertni bos va ichidagi so'zlarni o'qi.</p>
+      </div>
+      
+      <button class="envelope" id="envelope" aria-label="Open letter">
+        <div class="envelope-back"></div>
+        <div class="letter-paper">
+          <span>Dear Marjona,</span>
+          <p>♥</p>
+        </div>
+        <div class="envelope-flap"></div>
+        <div class="envelope-front"></div>
+        <div class="envelope-heart">♥</div>
+      </button>
+      
+      <button class="text-btn" id="openLetterBtn" data-i18n="openLetter">
+        Maktubni ochish ♥
+      </button>
+    </section>
+    
+    <!-- GALLERY -->
+    <section class="section gallery-section" id="gallery">
+      <div class="section-heading">
+        <span class="section-label">03 — BEAUTIFUL MOMENTS</span>
+        <h2 data-i18n="galleryTitle">Go'zal lahzalar</h2>
+        <div class="heading-line"></div>
+        <p data-i18n="gallerySubtitle">
+          O'zingiz yoqtirgan suratlarni shu yerga qo'shing.
+        </p>
+      </div>
+      
+      <label for="photoUpload" class="upload-btn">
+        <span>＋</span>
+        <span data-i18n="uploadText">Surat qo'shish</span>
+      </label>
+      <input type="file" id="photoUpload" accept="image/*" multiple hidden>
+      
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item">
+          <img src="images/photo1.jpg" alt="Memory 1">
+          <span>♡</span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/photo2.jpg" alt="Memory 2">
+          <span>♡</span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/photo3.jpg" alt="Memory 3">
+          <span>♡</span>
+        </div>
+        <div class="gallery-item">
+          <img src="images/photo4.jpg" alt="Memory 4">
+          <span>♡</span>
+        </div>
+      </div>
+    </section>
+    
+    <!-- SURPRISE -->
+    <section class="surprise-section">
+      <div class="surprise-content">
+        <span class="surprise-star">✦</span>
+        <h2 data-i18n="surpriseTitle">Yana bir kichik syurpriz...</h2>
+        <p data-i18n="surpriseText">
+          Ba'zi sovg'alar ochilishini kutadi.
+        </p>
+        <button class="primary-btn" id="surpriseBtn" data-i18n="surpriseButton">
+          Syurprizni ochish 🎁
+        </button>
+      </div>
+    </section>
+    
+    <!-- FINAL -->
+    <section class="final-section">
+      <div class="final-heart">♥</div>
+      <h2>Marjona</h2>
+      <p data-i18n="finalText">Ushbu kichik dunyoga tashrif buyurganing uchun rahmat.</p>
+      <span class="final-signature">Forever & Always ♡</span>
+    </section>
+    
+  </main>
+  
+  <footer>
+    <p>Made with <span>♥</span> for Marjona</p>
+    <small>FOREVER MARJONA © 2026</small>
+  </footer>
+  
+  <!-- LETTER MODAL -->
+  <div class="modal" id="letterModal">
+    <div class="modal-content letter-modal-content">
+      <button class="close-btn" data-close="letterModal">×</button>
+      <span class="modal-flower">🌹</span>
+      <h2 data-i18n="modalLetterTitle">Aziz Marjona...</h2>
+      <p data-i18n="modalLetterText">
+        Bu saytning har bir qismi senga atab tayyorlandi.
+        Hayoting doimo quvonch, go'zallik va unutilmas
+        lahzalarga boy bo'lsin. Har doim baxtli bo'l!
+      </p>
+      <div class="modal-signature">With love, ♥</div>
+    </div>
+  </div>
+  
+  <!-- SURPRISE MODAL -->
+  <div class="modal" id="surpriseModal">
+    <div class="modal-content surprise-modal-content">
+      <button class="close-btn" data-close="surpriseModal">×</button>
+      <div class="big-heart">♥</div>
+      <h2 data-i18n="modalSurpriseTitle">Sen alohida insonsan!</h2>
+      <p data-i18n="modalSurpriseText">
+        Marjona, ushbu sahifa sen uchun tayyorlangan
+        kichik sovg'a. Doimo yuzingdan tabassum arimasin! ♡
+      </p>
+      <div class="sparkles">✦ ✧ ♥ ✧ ✦</div>
+    </div>
+  </div>
+  
+  <!-- IMAGE VIEWER -->
+  <div class="modal image-modal" id="imageModal">
+    <div class="image-viewer">
+      <button class="close-btn" data-close="imageModal">×</button>
+      <img id="expandedImage" src="" alt="Selected photo">
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
